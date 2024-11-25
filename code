@@ -1,3 +1,10 @@
+import kagglehub
+
+# Download latest version
+path = kagglehub.dataset_download("gauravduttakiit/embryo-classification-based-on-microscopic-images")
+
+print("Path to dataset files:", path)
+
 import keras
 from keras.models import Sequential
 from keras.layers import Conv2D,Flatten,Dense,MaxPooling2D,Dropout
